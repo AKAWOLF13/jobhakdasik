@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block contents %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/base-style.css' %}">
+    
+    
+    
+</head>
+
+<body>
+<div class="mypage">
+<br><br><br><br><br><br>
+<!--회원 이미지 불러오기& 닉네임 & 이메일 개인정보 수정하기-->
+{% if user.is_authenticated %}
+<img src="{% static 'user.png' %}" alt="불러오기 실패" class="img-circle">
+<br><br>
+<p class="user_name">
+{{user.username}}님 
+</p>
+
+<!--{{user.email}} 띄울 수 있는 방법 찾아야함.-->
+<a class="update btn-primary btn" href="{% url 'signup' %}" role="button">개인정보 수정하기</a>
+<br>
+{% else %}
+<img src="{% static 'user.png' %}" alt="불러오기 실패" class="img-circle">
+<br>
+{% endif %}
+
+<br>
+    <div class="mypage_content">
+        <div class="mypage_content1">
+        <a href="#" class="cafe"> 내의견</a> <!--hover로 색깔 변하게 하는 것. active는 그색으로 유지하기-->
+        <a href="#" class="cafe"> 좋아요</a>
+        <a href="#" class="cafe"> 북마크</a>
+        </div>
+    <br>
+        <div class="mypage_content2">
+        <!-- Content가 들어가는 자리-->
+        
+        </div>
+        </div>
+<!--여기는 ajax로 하는 것일듯-->
+</div>
+</body>
+</html>
+{% endblock %}
+
+
+
