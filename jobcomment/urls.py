@@ -16,4 +16,5 @@ urlpatterns =[
     path('search', views.search, name="search"),
     path('mypage/', views.mypage, name="mypage"),
     path('change/', views.change, name="change"),
+    
 ]

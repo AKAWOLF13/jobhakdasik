@@ -19,7 +19,7 @@
 <br><br><br><br><br><br>
 <!--회원 이미지 불러오기& 닉네임 & 이메일 개인정보 수정하기-->
 {% if user.is_authenticated %}
-<img src="{% static 'user.png' %}" alt="불러오기 실패" class="img-circle">
+<img src="{% static 'user.png' %}" alt="불러오기 실패" class="img-circle circle">
 <br><br>
 <p class="user_name">
 {{user.username}}님 
@@ -49,10 +49,9 @@
     <br>
         <div class="mypage_content2">
         <!-- Content가 들어가는 자리-->
-        
         </div>
     <br><br>    
-<!--여기는 ajax로 하는 것일듯-->
+
 </div>
 </body>
 </html>

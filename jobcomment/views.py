@@ -147,3 +147,4 @@ def change(request):
             auth.login(request, user)
             return redirect('home')
     return render(request, 'change.html')
+

@@ -639,12 +639,14 @@ ul{
     background-color: #a98ec5 !important;
     border-color: #a98ec5;
     color: white;
+    font-size:12px;
+    font-weight: bold;
 }
 .update:hover{
     border-color: #a98ec5;
 }
 .user_name{
-    font-weight: 1200px;
+    font-weight: bold;
     font-size: 20px;
     color: #9675c1;
 }
@@ -664,4 +666,7 @@ ul{
 }
 .mypage{
     text-align: center;
+}
+.circle{
+    width: 120px;
 }
