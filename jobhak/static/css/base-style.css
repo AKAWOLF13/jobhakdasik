@@ -629,7 +629,7 @@ ul{
     color: #a98ec5;
 }
 .cafe:active{
-    text-decoration: none;
+    text-decoration: underline;
     color: #a98ec5;
 }
 .update{
